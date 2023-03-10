@@ -8,7 +8,7 @@ spec:
   sourceType: helm
   helm:
     repo: https://istio-release.storage.googleapis.com/charts
-    chart: istio/base
+    chart: base
     version: base-1.16.1
     releaseName: istiobase
     namespace: istio-system
