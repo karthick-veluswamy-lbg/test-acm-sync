@@ -33,5 +33,19 @@ helmCharts:
   releaseName: my-cert-manager
   namespace: cert-manager
 
+
+helmCharts:
+
+- name: istiod-canary
+  repo: https://istio-release.storage.googleapis.com/charts
+  version: 1.18.0-alpha.0
+  releaseName: istiod
+  namespace: istio-system
+  valuesInline:
+    revision: canary
+  valuesFile: "./istiod.pdev.yaml"
+
+
+
 resources:
 - sample-app
