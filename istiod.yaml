@@ -7,7 +7,7 @@ spec:
   sourceFormat: unstructured
   sourceType: helm
   helm:
-    repo: https://istio-release.storage.googleapis.com/charts
+    repo: https://istio-release.storage.googleapis.com
     chart: base
     version: base-1.16.1
     releaseName: istiobase
