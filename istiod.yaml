@@ -1,0 +1,14 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: ROOT_SYNC_NAME
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  sourceType: helm
+  helm:
+    repo: https://istio-release.storage.googleapis.com/charts
+    chart: istio/base
+    version: base-1.16.1
+    releaseName: istiobase
+    namespace: istio-system
