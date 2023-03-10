@@ -14,6 +14,15 @@ helmCharts:
 - name: gateway
   repo: https://istio-release.storage.googleapis.com/charts
   version: 1.17.1
+  releaseName: istio-lab2
+- name: gateway
+  repo: https://istio-release.storage.googleapis.com/charts
+  version: 1.17.1
+  releaseName: istio-lab3
+  namespace: istio-gateway
+- name: gateway
+  repo: https://istio-release.storage.googleapis.com/charts
+  version: 1.17.1
   releaseName: istio-egresssgateway
   namespace: istio-gateway
   valuesFile: "./egress.pdev.yaml"
