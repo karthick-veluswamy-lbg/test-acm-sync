@@ -17,3 +17,6 @@ helmCharts:
   releaseName: istio-egresssgateway
   namespace: istio-gateway
   valuesFile: "./egress.pdev.yaml"
+
+resources:
+- sample-app
