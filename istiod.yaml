@@ -7,10 +7,9 @@ spec:
   sourceFormat: unstructured
   sourceType: helm
   helm:
-    repo: https://istio-release.storage.googleapis.com
+    repo: https://istio-release.storage.googleapis.com/charts
     chart: base
     version: base-1.16.1
     releaseName: istiobase
     namespace: istio-system
-    auth: gcpserviceaccount
-    gcpServiceAccountEmail: playpen-r09iht-sa@playpen-r09iht.iam.gserviceaccount.com	
+    auth: none
